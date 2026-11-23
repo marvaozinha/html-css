@@ -1,45 +1,42 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
 .container {
+    width: 100vw;
+    height: 100vh;
     display: grid;
-     grid-template-rows: repeat(4,100px);
-    grid-template-columns: repeat(3,1fr);
-    gap:5px;
-
-.caixa1 {
-    background-color: blue;
-    grid-row-start: 1;
-    grid-row-end: 2;
-    grid-column-start: 1;
-    grid-column-end: 4;
+    grid-template-rows: 80px 40px 1fr 40px;
+    grid-template-columns: 1fr 150px;
+    gap: 5px;
 }
 
-.caixa2 {
-    background-color: red;
-    grid-row-start: 2;
-    grid-row-end: 3;
-    grid-column-start: 1;
-    grid-column-end: 4;
+.caixa {
+    background-color: lightgray;
+    border: 1px solid black;
+    padding: 10px;
+    text-align: center;
 }
 
-.caixa3 {
-    background-color: brown;
-    grid-row-start: 3;
-    grid-row-end: 4;
-    grid-column-start: 1;
-    grid-column-end: 3;
+#topo {
+    grid-area: 1 / 1 / 2 / -1;
+
+}
+#menu {
+    grid-area: 2 / 1 / 3 / -1;
+}
+#principal {
+    grid-area: 3 / 1 / -2 / 2;
 }
 
-.caixa4 {
-    background-color: aqua;
-    grid-row-start: 3;
-    grid-row-end: 4;
-    grid-column-start: 3;
-    grid-column-end: 4;
+#secundario {
+    grid-area: 3 / -2 / -2 / -1;
 }
 
-.caixa5 {
-    background-color: aquamarine;
-    grid-row-start: 4;
-    grid-row-end: 5;
-    grid-column-start: 1;
-    grid-column-end: 4;
+#rodape {
+    grid-area: -2 / 1 / -1 / -1;
 }
+
+

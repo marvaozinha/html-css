@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Desafio de grid</title>
+    <title>Desafio de grid Layout</title>
     <link rel="stylesheet" href="style.css">
     <style>
         div.container {
@@ -11,7 +11,6 @@
             display: grid;
             justify-content: end;
           
-            
         }
 
         div.item {
@@ -23,12 +22,21 @@
 </head>
 <body>
     <div class="container">
-        <div class="caixa1">Caixa 01</div>
-        <div class="caixa2">Caixa 02</div>
-        <div class="caixa3">Caixa 03</div>
-        <div class="caixa4">Caixa 04</div>
-        <div class="caixa5">Caixa 05</div>
-        
+        <header class="caixa" id="topo">
+            Topo 
+        </header>
+        <nav class="caixa" id="menu">
+            Menu
+        </nav>
+        <main class="caixa" id="Principal">
+            Principal
+        </main>
+        <aside class="caixa" id="secundario">
+            Secundário
+        </aside>
+        <footer class="caixa" id="rodape">
+            Rodapé
+        </footer>
     </div>
 </body>
 </html>
